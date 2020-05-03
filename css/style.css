@@ -1,36 +1,44 @@
-body
+/* affects the entire body of the html file */
+body { /* Missing curly brace added */
   font-size: 14px;
 }
 
+/* affects the nav type selector */
 nav {
-  background color: yellow;
+  background-color: yellow; /* correct property selected */
   height: 100px;
   margin-top: -10px;
   position: fixed;
   width: 100%;
+} /* Missing curly brace added */
 
-
+/* affects the nav type selector */
 section {
   margin: 0 auto;
   width: 60%;
 }
 
+/* affects all h1 type selectors */
 h1 {
-  font-family sans-serif;
+  font-family: sans-serif; /* Missing colon Added after property */
   font-size: 2em;
 }
 
+/* affects all h3 type selectors as well as the example class selector */
 .example, h3 {
   padding-top: 30px;
-  text-align center
+  text-align: center; /* Missing colon Added after property. Semi-colon added after value */
 }
 
+/* affects all h3 type selectors */
 h3 {
   font-size: 1.3em;
 }
 
+/* affects all element class selectors */
 .element {
   background-color: green;
   height: 100px;
-  margin 10px 0;
+  margin: 10px 0px; /* Missing colon Added after property. Second margin value should have px */
   width: 100%;
+} /* Missing curly brace added */
